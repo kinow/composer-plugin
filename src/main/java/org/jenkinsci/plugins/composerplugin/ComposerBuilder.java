@@ -63,12 +63,6 @@ public class ComposerBuilder extends Builder {
         else
             listener.getLogger().println("Only build job, "+name+"!");
         
-        
-        if (getDescriptor().getAwaysUpdateProject())
-            listener.getLogger().println("Aways update Composer on build, "+name+"!");
-        else
-            listener.getLogger().println("Only build job, "+name+"!");
-
         return true;
     }
 
@@ -120,7 +114,6 @@ public class ComposerBuilder extends Builder {
 
         public boolean isApplicable(Class<? extends AbstractProject> aClass) {
             // Indicates that this builder can be used with all kinds of project types
-        	
             return true;
         }
 
